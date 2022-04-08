@@ -1,0 +1,17 @@
+asm_offset.a1:Debug|x64:C:/Users/cheun/workspace/Vulkan-Loader/loader/asm_offset.c
+allocation.a1:Debug|x64:C:/Users/cheun/workspace/Vulkan-Loader/loader/allocation.c
+cJSON.a1:Debug|x64:C:/Users/cheun/workspace/Vulkan-Loader/loader/cJSON.c
+debug_utils.a1:Debug|x64:C:/Users/cheun/workspace/Vulkan-Loader/loader/debug_utils.c
+extension_manual.a1:Debug|x64:C:/Users/cheun/workspace/Vulkan-Loader/loader/extension_manual.c
+get_environment.a1:Debug|x64:C:/Users/cheun/workspace/Vulkan-Loader/loader/get_environment.c
+gpa_helper.a1:Debug|x64:C:/Users/cheun/workspace/Vulkan-Loader/loader/gpa_helper.c
+loader.a1:Debug|x64:C:/Users/cheun/workspace/Vulkan-Loader/loader/loader.c
+log.a1:Debug|x64:C:/Users/cheun/workspace/Vulkan-Loader/loader/log.c
+murmurhash.a1:Debug|x64:C:/Users/cheun/workspace/Vulkan-Loader/loader/murmurhash.c
+terminator.a1:Debug|x64:C:/Users/cheun/workspace/Vulkan-Loader/loader/terminator.c
+trampoline.a1:Debug|x64:C:/Users/cheun/workspace/Vulkan-Loader/loader/trampoline.c
+wsi.a1:Debug|x64:C:/Users/cheun/workspace/Vulkan-Loader/loader/wsi.c
+loader_windows.a1:Debug|x64:C:/Users/cheun/workspace/Vulkan-Loader/loader/loader_windows.c
+dirent_on_windows.a1:Debug|x64:C:/Users/cheun/workspace/Vulkan-Loader/loader/dirent_on_windows.c
+dev_ext_trampoline.a1:Debug|x64:C:/Users/cheun/workspace/Vulkan-Loader/loader/dev_ext_trampoline.c
+phys_dev_ext.a1:Debug|x64:C:/Users/cheun/workspace/Vulkan-Loader/loader/phys_dev_ext.c

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2411637013">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="murmurhash" lineNumber="36"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="key"/>
+    <functioncall functionName="l"/>
+    <functioncall functionName="n"/>
+    <functioncall functionName="r1"/>
+    <functioncall functionName="r2"/>
+    <functioncall functionName="seed"/>
+    <functioncall functionName="switch"/>
+  </FileInfo>
+</analyzerinfo>

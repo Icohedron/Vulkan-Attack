@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.7"/>
+    <errors>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;((void*)0)==obj&amp;#039; is redundant or there is possible null pointer dereference: (struct VkLayerDispatchTable_**)obj." verbose="Either the condition &amp;#039;((void*)0)==obj&amp;#039; is redundant or there is possible null pointer dereference: (struct VkLayerDispatchTable_**)obj." cwe="476" file0="loader/asm_offset.c" sinceDate="2022-04-07">
+            <location file="loader\loader.h" line="47" info="Null pointer dereference"/>
+            <location file="loader\loader.h" line="48" info="Assuming that condition &amp;#039;((void*)0)==obj&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;c&amp;#039; is redundant or there is possible null pointer dereference: prev." verbose="Either the condition &amp;#039;c&amp;#039; is redundant or there is possible null pointer dereference: prev." cwe="476" file0="loader/cJSON.c" sinceDate="2022-04-07">
+            <location file="loader\cJSON.c" line="929" info="Null pointer dereference"/>
+            <location file="loader\cJSON.c" line="951" info="Calling function &amp;#039;suffix_object&amp;#039;, 1st argument &amp;#039;c&amp;#039; value is 0"/>
+            <location file="loader\cJSON.c" line="950" info="Assuming that condition &amp;#039;c&amp;#039; is not redundant"/>
+        </error>
+        <error id="ctunullpointer" severity="warning" msg="Null pointer dereference: prev" verbose="Null pointer dereference: prev" cwe="476" sinceDate="2022-04-07">
+            <location file="loader\cJSON.c" line="929" info="Dereferencing argument prev that is null"/>
+            <location file="loader\cJSON.c" line="951" info="Calling function suffix_object, 1st argument is null"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &amp;#039;debug_report_obj==VK_DEBUG_REPORT_OBJECT_TYPE_UNKNOWN_EXT&amp;#039;, second condition is always false" verbose="Identical condition &amp;#039;debug_report_obj==VK_DEBUG_REPORT_OBJECT_TYPE_UNKNOWN_EXT&amp;#039;, second condition is always false" cwe="398" file0="loader/debug_utils.c" sinceDate="2022-04-07">
+            <location file="loader\generated\vk_object_types.h" line="246" info="Testing identical condition &amp;#039;debug_report_obj==VK_DEBUG_REPORT_OBJECT_TYPE_UNKNOWN_EXT&amp;#039;"/>
+            <location file="loader\generated\vk_object_types.h" line="244" info="If condition &amp;#039;debug_report_obj==VK_DEBUG_REPORT_OBJECT_TYPE_UNKNOWN_EXT&amp;#039; is true, the function will return/exit"/>
+        </error>
+        <error id="identicalConditionAfterEarlyExit" severity="warning" msg="Identical condition &amp;#039;core_report_obj==VK_OBJECT_TYPE_UNKNOWN&amp;#039;, second condition is always false" verbose="Identical condition &amp;#039;core_report_obj==VK_OBJECT_TYPE_UNKNOWN&amp;#039;, second condition is always false" cwe="398" file0="loader/debug_utils.c" sinceDate="2022-04-07">
+            <location file="loader\generated\vk_object_types.h" line="336" info="Testing identical condition &amp;#039;core_report_obj==VK_OBJECT_TYPE_UNKNOWN&amp;#039;"/>
+            <location file="loader\generated\vk_object_types.h" line="334" info="If condition &amp;#039;core_report_obj==VK_OBJECT_TYPE_UNKNOWN&amp;#039; is true, the function will return/exit"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." cwe="686" file0="loader/loader.c" sinceDate="2022-04-07">
+            <location file="loader\loader.c" line="541"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 2) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." cwe="686" file0="loader/loader.c" sinceDate="2022-04-07">
+            <location file="loader\loader.c" line="541"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 3) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 3) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." cwe="686" file0="loader/loader.c" sinceDate="2022-04-07">
+            <location file="loader\loader.c" line="541"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." cwe="686" file0="loader/loader.c" sinceDate="2022-04-07">
+            <location file="loader\loader.c" line="574"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 2) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." cwe="686" file0="loader/loader.c" sinceDate="2022-04-07">
+            <location file="loader\loader.c" line="574"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 3) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 3) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." cwe="686" file0="loader/loader.c" sinceDate="2022-04-07">
+            <location file="loader\loader.c" line="574"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." cwe="686" file0="loader/loader.c" sinceDate="2022-04-07">
+            <location file="loader\loader.c" line="607"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 2) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." cwe="686" file0="loader/loader.c" sinceDate="2022-04-07">
+            <location file="loader\loader.c" line="607"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 3) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 3) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." cwe="686" file0="loader/loader.c" sinceDate="2022-04-07">
+            <location file="loader\loader.c" line="607"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;NULL!=library_path_str&amp;#039; is redundant or there is possible null pointer dereference: library_path_str." verbose="Either the condition &amp;#039;NULL!=library_path_str&amp;#039; is redundant or there is possible null pointer dereference: library_path_str." cwe="476" file0="loader/loader.c" sinceDate="2022-04-07">
+            <location file="loader\loader.c" line="2083" info="Null pointer dereference"/>
+            <location file="loader\loader.c" line="2089" info="Assuming that condition &amp;#039;NULL!=library_path_str&amp;#039; is not redundant"/>
+        </error>
+        <error id="leakReturnValNotUsed" severity="error" msg="Return value of allocation function &amp;#039;LoadLibrary&amp;#039; is not stored." verbose="Return value of allocation function &amp;#039;LoadLibrary&amp;#039; is not stored." cwe="771" file0="loader/loader_windows.c" sinceDate="2022-04-07">
+            <location file="loader\loader_windows.c" line="74"/>
+        </error>
+    </errors>
+</results>

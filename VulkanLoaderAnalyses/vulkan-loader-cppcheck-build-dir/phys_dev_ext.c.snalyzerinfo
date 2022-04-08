@@ -1,0 +1,36 @@
+set_loader_magic_value
+valid_loader_magic_value call:[return]
+LoaderPnpDriverRegistry call:[GetCurrentProcess,IsWow64Process]
+LoaderPnpDriverRegistryWide call:[GetCurrentProcess,IsWow64Process]
+LoaderPnpELayerRegistry call:[GetCurrentProcess,IsWow64Process]
+LoaderPnpELayerRegistryWide call:[GetCurrentProcess,IsWow64Process]
+LoaderPnpILayerRegistry call:[GetCurrentProcess,IsWow64Process]
+LoaderPnpILayerRegistryWide call:[GetCurrentProcess,IsWow64Process]
+loader_platform_file_exists call:[_access]
+loader_platform_is_path_absolute
+loader_platform_dirname call:[strchr]
+loader_platform_executable_path call:[GetModuleFileName]
+loader_platform_open_library call:[GetLastError,LoadLibrary,LoadLibraryEx] noreturn:[LoadLibraryEx]
+loader_platform_open_library_error call:[GetLastError,snprintf]
+loader_platform_close_library call:[FreeLibrary] noreturn:[FreeLibrary]
+loader_platform_get_proc_address call:[GetProcAddress,assert,return] noreturn:[GetProcAddress]
+loader_platform_get_proc_address_error call:[snprintf]
+loader_platform_get_thread_id call:[GetCurrentThreadId] noreturn:[GetCurrentThreadId]
+loader_platform_thread_create_mutex call:[InitializeCriticalSection] noreturn:[InitializeCriticalSection]
+loader_platform_thread_lock_mutex call:[EnterCriticalSection] noreturn:[EnterCriticalSection]
+loader_platform_thread_unlock_mutex call:[LeaveCriticalSection] noreturn:[LeaveCriticalSection]
+loader_platform_thread_delete_mutex call:[DeleteCriticalSection] noreturn:[DeleteCriticalSection]
+loader_platform_thread_init_cond call:[InitializeConditionVariable] noreturn:[InitializeConditionVariable]
+loader_platform_thread_cond_wait call:[SleepConditionVariableCS] noreturn:[SleepConditionVariableCS]
+loader_platform_thread_cond_broadcast call:[WakeAllConditionVariable] noreturn:[WakeAllConditionVariable]
+loader_platform_is_path call:[strchr]
+loader_instance call:[return]
+loader_unwrap_physical_device call:[return] noreturn:[return]
+loader_set_dispatch
+loader_get_dispatch
+loader_get_dev_dispatch
+loader_get_instance_layer_dispatch
+loader_get_instance_dispatch
+loader_init_dispatch call:[assert,loader_set_dispatch,valid_loader_magic_value] noreturn:[loader_set_dispatch]
+loader_get_phys_dev_ext_tramp
+loader_get_phys_dev_ext_termin
